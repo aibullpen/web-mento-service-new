@@ -1,0 +1,14 @@
+﻿
+> mento-service@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v7.2.4 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m??[39m 1720 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                        [39m[1m[2m  0.46 kB[22m[1m[22m[2m ??gzip:   0.29 kB[22m
+[2mdist/[22m[32massets/dashboard-bg-BH8bHPjX.jpg  [39m[1m[2m289.23 kB[22m[1m[22m
+[2mdist/[22m[35massets/index-CloQnLI3.css         [39m[1m[2m 11.48 kB[22m[1m[22m[2m ??gzip:   2.86 kB[22m
+[2mdist/[22m[36massets/index-yoHGciAi.js          [39m[1m[33m574.92 kB[39m[22m[2m ??gzip: 181.36 kB[22m
+[32m??built in 16.74s[39m

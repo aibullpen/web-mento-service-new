@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read, write: if request.auth != null && (request.auth.uid == userId || request.auth.token.email in [
+        'ai.bullpen@gmail.com',
+        'kcorn1@gmail.com',
+        'kcorn2@gmail.com',
+        'kcorn3@gmail.com',
+        'kcorn4@gmail.com',
+        'kcorn5@gmail.com',
+        'kcorn6@gmail.com',
+        'kcorn7@gmail.com',
+        'kcorn8@gmail.com',
+        'kcorn9@gmail.com',
+        'kcorn10@gmail.com'
+      ]);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-snow-50 text-snow-900;
+  font-family: 'Inter', sans-serif;
+}
