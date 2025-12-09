@@ -18,4 +18,10 @@ export const db = getFirestore(app);
 export const googleProvider = new GoogleAuthProvider();
 googleProvider.addScope('https://www.googleapis.com/auth/documents');
 googleProvider.addScope('https://www.googleapis.com/auth/drive.file');
+
+// Set custom parameters to ensure proper OAuth flow
+googleProvider.setCustomParameters({
+    prompt: 'select_account'
+});
+
 export default app;
